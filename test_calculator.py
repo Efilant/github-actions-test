@@ -38,3 +38,8 @@ def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(10, 0)
 
+
+def test_failing_test():
+    """Bu test başarısız olacak - ekran görüntüsü için"""
+    assert add(2, 2) == 5  # Bu yanlış, test başarısız olacak
+
